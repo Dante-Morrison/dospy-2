@@ -23,12 +23,9 @@ def hello_world():
 def doom():
     return render_template('doom.html')
 
-
-@app.route('/doomlite')
-def doomlite():
-    print('user connected to beta page')
-    return render_template('doomlite.html')
-
+@app.route('/v86')
+def v86():
+    return render_template('v86.html')
 
 @app.errorhandler(404)
 def page_not_found(e):

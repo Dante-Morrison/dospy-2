@@ -16,6 +16,9 @@ zip file and change the built in directory to the corresponding one of the zip f
 
 after that it needs to be initialized in the flask container too. this is optional if you dont really care about the flask layer. to do this, add another directory in the main.py script. its okay to copy one of the other existing directories, just be sure to rename it for it to work. also be sure to point it in the direction of your new page rather than the old page.
 
+#DosPY DB
+we are working on adding an official dospy database so you can add your own file and contribute games. it will also be a place to add isos and bios drivers so you can add your favorites with full support. the database will aslo be open so if youd like you couls make your own dospy and add support for any of the available games
+
 # additional info
 this project was made with repl.it and therefore works best with that. to run it in repl, create a new project from this repo and set the language to python. also make it run the main.py script in the file.
 
