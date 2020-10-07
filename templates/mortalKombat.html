@@ -13,7 +13,7 @@
 		}
 
 		.dosbox-container>.dosbox-overlay {
-			background: url("{{ url_for('static', filename='ect/DOOM.png') }}");
+			background: url("{{ url_for('static', filename='ect/mortalkombat.jpg') }}");
 		}
 
 		p {
@@ -21,7 +21,7 @@
 			margin-left: 40px;
 		}
         body{
-            background: linear-gradient(to top, #202020, #111119);
+            background: black;
         }
 	</style>
 </head>
@@ -42,7 +42,7 @@ Strafe: A, D;</p>
        var dosbox = new Dosbox({
          id: "dosbox",
          onload: function (dosbox) {
-           dosbox.run("https://ghcdn.rawgit.org/Dante-Morrison/DosPY/master/static/ect/DOOM.zip", "./DOOM/DOOM.EXE");
+           dosbox.run("https://ghcdn.rawgit.org/Dante-Morrison/DosPY/master/static/ect/DOSBOX_MK2.ZIP", "./MKII.EXE");
          },
          onrun: function (dosbox, app) {
            console.log("App '" + app + "' is runned");

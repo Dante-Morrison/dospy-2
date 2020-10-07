@@ -23,6 +23,18 @@ def hello_world():
 def doom():
     return render_template('doom.html')
 
+@app.route('/doom2')
+def doom2():
+    return render_template('doom2.html')
+
+@app.route('/mortalKombat')
+def mortalKombat():
+    return render_template('mortalKombat.html')
+
+@app.route('/wolfenstein')
+def Wolf3D():
+    return render_template('wolfenstein.html')
+
 @app.route('/v86')
 def v86():
     return render_template('v86.html')
