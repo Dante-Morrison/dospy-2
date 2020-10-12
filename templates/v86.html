@@ -1,7 +1,7 @@
 <!doctype html>
 <title>Basic Emulator</title><!-- not BASIC! -->
 
-<script src="../build/libv86.js"></script>
+<script src="https://repl.it/@LegionNorth/dospy-2#static/js/libv86.js"></script>
 <script>
 "use strict";
 
@@ -18,15 +18,16 @@ window.onload = function()
             url: "https://ghcdn.rawgit.org/copy/v86/master/bios/vgabios.bin",
         },
         cdrom: {
-            url: "https://github.com/copy/v86/tree/master/bios/linux.iso",
+            url: "wget -P images/ https://copy.sh/v86/images/{linux.iso,linux3.iso,kolibri.img,windows101.img,os8.dsk,freedos722.img,openbsd.img}",
         },
         autostart: true,
+        run();
     });
 }
 </script>
 
 <!-- A minimal structure for the ScreenAdapter defined in browser/screen.js -->
 <div id="screen_container">
-    <div style="white-space: pre; font: 14px monospace; line-height: 14px"></div>
+    <div style="white-space: linear-gradient(to bottom, #202020, #111119); font: 14px monospace; line-height: 14px"></div>
     <canvas style="display: none"></canvas>
 </div>

@@ -31,6 +31,10 @@ def doom2():
 def mortalKombat():
     return render_template('mortalKombat.html')
 
+@app.route('/quake')
+def quake():
+    return render_template('quake.html')
+
 @app.route('/wolfenstein')
 def Wolf3D():
     return render_template('wolfenstein.html')
@@ -41,6 +45,7 @@ def v86():
 
 @app.errorhandler(404)
 def page_not_found(e):
+    print ("ay boss, there trying to access a nonexistant page. want me to tell em to piss off?")
     return redirect("https://dospy-2.legionnorth.repl.co/", code=404)
 
 
