@@ -23,29 +23,35 @@ def hello_world():
 def doom():
     return render_template('doom.html')
 
+
 @app.route('/doom2')
 def doom2():
     return render_template('doom2.html')
+
 
 @app.route('/mortalKombat')
 def mortalKombat():
     return render_template('mortalKombat.html')
 
+
 @app.route('/quake')
 def quake():
     return render_template('quake.html')
+
 
 @app.route('/wolfenstein')
 def Wolf3D():
     return render_template('wolfenstein.html')
 
+
 @app.route('/v86')
 def v86():
     return render_template('v86.html')
 
+
 @app.errorhandler(404)
 def page_not_found(e):
-    print ("ay boss, there trying to access a nonexistant page. want me to tell em to piss off?")
+    print("user trying to connect to nonexistent page, redirecting")
     return redirect("https://dospy-2.legionnorth.repl.co/", code=404)
 
 

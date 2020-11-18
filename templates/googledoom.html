@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>school work</title>
+	<style type="text/css">
+		.dosbox-container {
+			width: 100%;
+			height: 100%;
+            background: linear-gradient(to bottom, #202020, #111119);
+		}
+
+		.dosbox-container>.dosbox-overlay {
+			background: url("{{ url_for('static', filename='ect/DOOM.png') }}");
+		}
+
+		p {
+			color: white;
+			margin-left: 40px;
+		}
+        body{
+            background: linear-gradient(to top, #202020, #111119);
+        }
+	</style>
+</head>
+
+<body>
+
+	<br/>
+		<button onclick="dosbox.requestFullScreen();">Make fullscreen</button><br/>
+     <div id="dosbox"></div>
+<p><b>Controls:</b>Move: W, LEFT, S, RIGHT;
+Use: E;
+Fire: SPACE;
+Speed on: SHIFT;
+Strafe on: ALT;
+Strafe: A, D;</p>
+     <script type="text/javascript" src="{{ url_for('static', filename='js/DOS-API.js') }}"></script>
+     <script type="text/javascript">
+       var dosbox = new Dosbox({
+         id: "dosbox",
+         onload: function (dosbox) {
+           dosbox.run("https://drive.google.com/file/d/1-2M4MAws80c-ZPXajtWtTaHZ5qXaVlon/view?usp=sharing", "./DOOM/DOOM.EXE");
+         },
+         onrun: function (dosbox, app) {
+           console.log("App '" + app + "' is runned");
+         }
+       });
+     </script>
+     <p><b>notice: </b>this is an in development site. there are still many bugs (particularly with css) that have yet to be worked out
+
+     <b>THIS IS NOT A PRIVATE SITE, </b> almost anything done on this site will be collected into the server log and kept until the server closes after use. do not share personal info on this site</p>
+
+   </body>
+</html>

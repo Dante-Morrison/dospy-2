@@ -1,2 +1,0 @@
-i got a simple task for you. the homepage, readme.md, needs some hyperlinks to the game pages. i cant really do it myself because i have to get v86 working so if you could add some hyperlinks and a list of directories somewhere in the page. you can find addable pages by looking in the main.py page and you can add them by taking the production link from the working page. heres another page to help
-https://guides.github.com/features/mastering-markdown/

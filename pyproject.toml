@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "dospy-2"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+description = "a basic flask server that can run games and can avoid being blocked by a high level system"
+authors = ["dantemorrison@gmail.com"]
 
 [tool.poetry.dependencies]
 python = "^3.8"

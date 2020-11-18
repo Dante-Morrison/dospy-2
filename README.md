@@ -23,3 +23,4 @@ we are working on adding an official dospy database so you can add your own file
 this project was made with repl.it and therefore works best with that. to run it in repl, create a new project from this repo and set the language to python. also make it run the main.py script in the file.
 
 alternatively you can find the repl project and simply fork it there. although im not too sure about things like the whole github commit feature working.
+keys = db.keys()
